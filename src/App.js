@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import Particles from 'react-particles-js'
+<<<<<<< HEAD
 import Clarifai from 'clarifai'
+=======
+>>>>>>> d11d317a0b5357729a94422d360f8a08e629c259
 import './App.css'
 
 // Components
 
 import Navigation from './Components/Navigation/Navigation'
+<<<<<<< HEAD
 import Logo from './Components/Logo/Logo'
 import ImageLinkForm from './Components/ImageLinkForm/ImageLinkForm'
 import Rank from './Components/Rank/Rank'
@@ -16,6 +20,11 @@ import FaceRecognition from './Components/FaceRecognition/FaceRecognition';
 const app = new Clarifai.App({
   apiKey: '39750ab17d6048479587543e13b81ade',
 })
+=======
+import Navigation from './Components/Logo/Logo'
+import Navigation from './Components/ImageLinkForm/ImageLinkForm'
+import Navigation from './Components/Rank/Rank'
+>>>>>>> d11d317a0b5357729a94422d360f8a08e629c259
 
 const particlesOptions = {
   particles: {
@@ -34,11 +43,15 @@ class App extends Component {
     super()
     this.state = {
       input: '',
+<<<<<<< HEAD
       imageURL: ''
+=======
+>>>>>>> d11d317a0b5357729a94422d360f8a08e629c259
     }
   }
 
   onInputChange = (event) => {
+<<<<<<< HEAD
     this.setState({input: event.target.value})
   }
 
@@ -57,12 +70,24 @@ class App extends Component {
           // there was an error
         },
       )
+=======
+    console.log(event.target.value)
+  }
+
+  onButtonSubmit = () => {
+    console.log('Click')
+>>>>>>> d11d317a0b5357729a94422d360f8a08e629c259
   }
 
   render() {
     return (
+<<<<<<< HEAD
       <div className='App'>
         <Particles className='particles' params={particlesOptions} />
+=======
+      <div className="App">
+        <Particles className="particles" params={particlesOptions} />
+>>>>>>> d11d317a0b5357729a94422d360f8a08e629c259
         <Navigation />
         <Logo />
         <ImageLinkForm
@@ -70,7 +95,11 @@ class App extends Component {
           onButtonSubmit={this.onButtonSubmit}
         />
         <Rank />
+<<<<<<< HEAD
        <FaceRecognition imageURL={this.state.imageURL} />
+=======
+        {/* <FaceRecognition /> */}
+>>>>>>> d11d317a0b5357729a94422d360f8a08e629c259
       </div>
     )
   }
