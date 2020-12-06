@@ -54,6 +54,7 @@ class App extends Component {
 
   displayFaceBox = (box) => {
     this.setState({box: box});
+   
   }
 
 
@@ -83,7 +84,7 @@ class App extends Component {
           onButtonSubmit={this.onButtonSubmit}
         />
         <Rank />
-       <FaceRecognition imageURL={this.state.imageURL} />
+       <FaceRecognition box={this.state.box} imageURL={this.state.imageURL} />
       </div>
     )
   }
