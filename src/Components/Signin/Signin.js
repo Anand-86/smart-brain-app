@@ -4,7 +4,7 @@ import './Signin.css'
 const Signin = ({onRouteChange}) => {
   return (
     <article className='br3 ba b--transparent mv4 w-card w-50-m w-25-l mw6 shadow-5 center'>
-  <main className='pa4 black-80'>
+      <main className='pa4 black-80'>
     <div className='measure'>
       <fieldset id='sign_up' className='ba b--transparent ph0 mh0'>
         <legend className='f4 fw6 ph0 mh0'>Sign In</legend>
@@ -28,7 +28,7 @@ const Signin = ({onRouteChange}) => {
         <p onClick={() => onRouteChange('register')} className='f6 link dim black db pointer'>Register</p>      
       </div>
     </div>
-  </main> 
+      </main> 
   </article> 
   )
 };
