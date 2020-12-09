@@ -1,11 +1,11 @@
-import React from 'react'
-import './ImageLinkForm.css'
+import React from "react";
+import "./ImageLinkForm.css";
 
 const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
   return (
     <div className='App'>
       <p className='f3'>
-        {'This Magic Brain will detect faces in your pictures. Give it a try'}
+        {"This Magic Brain will detect faces in your pictures. Give it a try"}
       </p>
       <div className='center'>
         <div className='form center pa4 br3 shadow-5'>
@@ -23,7 +23,7 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ImageLinkForm
+export default ImageLinkForm;
